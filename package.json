@@ -1,0 +1,60 @@
+{
+  "name": "leadsauth-utils",
+  "version": "1.0.0",
+  "description": "LeadsAuth OAuth client.",
+  "keywords": [
+    "leadsauth",
+    "authentication",
+    "oauth",
+    "oauth2.0",
+    "sso",
+    "openid",
+    "jwt",
+    "saml"
+  ],
+  "homepage": "http://www.leadstec.com/leadsauth",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "tape test/integration/*-spec.js | tap-spec && tape test/unit/*-test.js | tap-spec",
+    "lint": "jshint *.js lib/*.js test/**/*.js",
+    "format": "semistandard",
+    "prepublish": "nsp check",
+    "docs": "jsdoc --verbose -d docs -t ./node_modules/ink-docstrap/template -R README.md index.js ./lib/*.js"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "test",
+    "doc"
+  ],
+  "author": {
+    "name": "Leads Technologies",
+    "url": "http://www.leadstec.com"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jwk-to-pem": "^1.2.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-gh-pages": "^0.9.1",
+    "grunt-touch": "^0.1.0",
+    "jshint": "^2.9.2",
+    "nock": "^8.0.0",
+    "nsp": "*",
+    "semistandard": "^7.0.5",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1",
+    "jsdoc": "^3.4.0",
+    "ink-docstrap": "^1.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/leadstec/leadsauth-nodejs-utils.git"
+  },
+  "bugs": "https://github.com/leadstec/leadsauth-nodejs-utils/issues"
+}
